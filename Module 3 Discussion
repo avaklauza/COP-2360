@@ -1,14 +1,33 @@
-  Bunny b1 = new Bunny { Name="Bo", LikesCarrots=true, LikesHumans=false };
-  Bunny b2 = new Bunny ("Bo")     { LikesCarrots=true, LikesHumans=false };
-  
-  b1.Dump(); b2.Dump();
+using System;
 
 public class Bunny
 {
   public string Name;
   public bool LikesCarrots;
   public bool LikesHumans;
-  
-  public Bunny () {}
-  public Bunny (string n) { Name = n; }
+
+  public Bunny 
+(string name,
+bool likesCarrots = false, 
+bool likesHumans = false)
+  {
+    Name = name;
+    LikesCarrots = likesCarrots;
+    LikesHumans = likesHumans; 
+  }
+}
+
+public class Bunny2
+{
+    public static void Main ()
+    {
+      Bunny newbunny = new bunny ("Hopper");
+       {
+          LikesCarrots = true;
+          LikesHumans = true;
+
+  }
+}
+Console.WriteLine("{newbunny.Name} -LikesCarrots:{newbunny.LikesCarrots}")
+Console.WriteLine("{newbunny.Name} -LikesHumans:{newbunny.LikesHuman}")
 }
