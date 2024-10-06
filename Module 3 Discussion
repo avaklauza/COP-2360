@@ -21,13 +21,13 @@ public class Bunny2
 {
     public static void Main ()
     {
-      Bunny newbunny = new bunny ("Hopper");
+      Bunny newbunny = new Bunny ("Hopper");
        {
-          LikesCarrots = true;
-          LikesHumans = true;
+          newbunny.LikesCarrots = true;
+          newbunny.LikesHumans = true;
 
   }
 }
-Console.WriteLine("{newbunny.Name} -LikesCarrots:{newbunny.LikesCarrots}")
-Console.WriteLine("{newbunny.Name} -LikesHumans:{newbunny.LikesHuman}")
+Console.WriteLine($"{newbunny.Name} -LikesCarrots:{newbunny.LikesCarrots}");
+Console.WriteLine($"{newbunny.Name} -LikesHumans:{newbunny.LikesHuman}");
 }
